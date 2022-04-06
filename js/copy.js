@@ -27,7 +27,7 @@ function copyText() {
         + "\n\n---Call's Info---"
         + "\nProduct: " + cProduct
         + "\n\nSummary of Issue/Request" + "\n" + cIssue
-        + "\n\nDevice Ext/MAC (If applicable):" + cDevice
+        + "\n\nDevice Ext/MAC (If applicable):" + "\n" + cDevice
         + "\n\nNetwork Topology: " + "\n" + cTopology
         + "\n\nArticles or link used?"
         + "\n" + cArticles
