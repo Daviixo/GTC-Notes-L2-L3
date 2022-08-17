@@ -13,6 +13,15 @@ function copyText() {
     var sResolution = document.getElementById("resolutionEscalation").value;
     var sNotes = document.getElementById("additionalNotes").value;
 
+    // Getting new fields values
+
+    var e = document.getElementById("viaappreport");
+    var reportViaAppText = e.options[e.selectedIndex].text;
+
+    // console.log("Text: " + reportViaAppText);
+
+    var reportID = document.getElementById("reportid").value;
+
     //Now, let's get the current date
 
     var today = new Date().toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"});
@@ -27,6 +36,8 @@ function copyText() {
         + "\n\n---Call's Info---"
         + "\nProduct: " + cProduct
         + "\n\nSummary of Issue/Request" + "\n" + cIssue
+        + "\n\nIssue Reported via app: " + "\n" + reportViaAppText
+        + "\n\nReport ID: " + "\n" + reportID
         + "\n\nDevice Ext/MAC (If applicable):" + "\n" + cDevice
         + "\n\nNetwork Topology: " + "\n" + cTopology
         + "\n\nArticles or link used?"
